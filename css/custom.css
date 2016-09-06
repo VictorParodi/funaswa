@@ -1,212 +1,67 @@
-/*
-    Información importante:
-
-    La separación vertical, se hace asignando márgenes inferiores desde el elemento ubicado en el top.
-    Cada elemento estará verticalmente separado uno de otro, gracias a un márgen inferior asignado
-    al elemento que esté inmediatemente por encima de este.
-
-    Los ed-item se separan entre si. Los ed-container se separan gracias al elemento que los contiene
-    (header, section o footer).
-*/
-
+/* ============================== General Styles ============================== */
 /*.ed-container {
-  border: 1px solid black;
+  border: 1px solid orange;
 }
 
 .ed-item {
-  border: 1px dashed orange;
+  border: 1px solid gray;
 }*/
 
-.padding-top-bottom {
+
+/* ============================== Home Styles ============================== */
+/* ==========  Header Section ========== */
+.header_container {
+  background-color: #263238;
+  background-color: #AD1457;
+  color: white;
+}
+
+.text.menu .item {
+  /*border: 1px dashed orange;*/
+  color: white !important;
+}
+
+.menu_logo {
+  width: 18em !important;
+}
+
+.menu_item {
+  font-size: 1.1em;
+  padding-left: 6em !important;
+}
+
+.container_header_bground {
+  background-image: url('../img/image1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60em;
+}
+
+/* ==========  Welcome Section ========== */
+.welcome_container {
+  padding-bottom: 3em;
+  padding-top: 3em;
+}
+
+.welcome_title,
+.welcome_subtitle,
+.welcome_text {
+  color: #AD1457;
   padding-bottom: 1em;
-  padding-top: 1em;
-}
-
-.container-title {
-  padding-bottom: 2em;
   text-align: center;
 }
 
-
-
-/* ------------------------------ Header Section ------------------------------ */
-.header.total {
-  background-color: #d32f2f;
-  text-align: center;
-  padding-bottom: 2em;
+.welcome_subtitle,
+.welcome_text {
+  /*color: #151515;*/
+  color: rgba(21,21,21, .7);
 }
 
-  .header__navbar__item {
-    /**/
-  }
-    .header__navbar__item__link {
-      color: white;
-      font-size: 1.1em;
-    }
-
-
-  .header__image__container {
-    /**/
-  }
-    .header__image__container__item {
-      /*width: 100%;*/
-    }
-
-
-  .header__text__container {
-    /**/
-  }
-    .header__text_container__item {
-      color: white;
-    }
-
-
-@media (max-width: 480px) {
-  .header.total {
-    height: 35em;
-    padding-top: 1em;
-  }
-
-  .header__image__container__item {
-    height: 25em;
-  }
+.container_welcome_textIcon {
+  padding-top: 3em;
 }
 
-
-/* ------------------------------ Services Section ------------------------------ */
-.services {
-  padding-bottom: 5em;
-  padding-top: 5em;
+.container_welcome_textIcon .header.icon{
+  color: rgba(21,21,21, .7);
 }
-
-  .container-text {
-    font-size: 1.1em;
-    padding-bottom: 2em;
-    text-align: center;
-  }
-
-  .container_services_item {
-    margin-bottom: 2em;
-    text-align: center;
-  }
-
-    .container_services_item_image {
-      padding: 0;
-      text-align: center;
-    }
-
-    .services_item_image {
-      /*width: 10em;*/
-    }
-
-@media (min-width: 768px) {
-  .container_services_item {
-    padding-top: 2em;
-  }
-}
-
-
-/* ------------------------------ Skills Section ------------------------------ */
-.skills {
-  /*background-color: #3A3335;*/
-  /*background-color: #191923;*/
-  /*background-color: rgba(25,25,35, 1);*/
-  background-color: #2E4052;
-  /*color: #E5E8E3;*/
-  color: #DDE0DB;
-  padding-bottom: 4em;
-  padding-top: 4em;
-}
-
-  .container_skills_avatar {
-
-  }
-
-    .subcontainer_skills_avatar {
-      /*background-color: skyblue;*/ /* si utilizo avatar3.svg en la imagn dentro de ese div, estas líneas deben estar descomantadas */
-      /*border-radius: 50%;
-      overflow: hidden;*/ /* si utilizo avatar3.svg en la imagn dentro de ese div, estas líneas deben estar descomantadas */
-      padding: 0;
-    }
-
-      .container_skills_avatar img {
-        /*border-radius: 50%;*/ /* si utilizo avatar3.svg en la imagn dentro de ese div, estas líneas deben estar descomantadas */
-        display: block;
-        height: 22em;
-        margin: auto;
-      }
-
-  .container_skills_text {
-    font-size: 1.1em;
-    /*padding-bottom: 5em;*/
-    text-align: justify;
-  }
-
-  .container_skills_item {
-    /*padding-top: 0em;*/
-    text-align: center;
-  }
-
-    .skills_item_image {
-      width: 11em;
-    }
-
-
-@media (max-width: 480px) {
-  .skills_item_image {
-    width: 13em;
-  }
-}
-
-@media (min-width: 768px) {
-  .container_skills_item {
-    padding-top: 4em;
-  }
-}
-
-
-/* ------------------------------ Portfolio Section ------------------------------ */
-.portfolio {
-  padding-bottom: 4em;
-  padding-top: 4em;
-}
-
-  .ui.card {
-    margin-bottom: 1em !important;
-    width: 100%;
-  }
-
-    .portfolio_project_image {
-      height: 22em !important;
-    }
-
-
-/* ------------------------------ Contact Section ------------------------------ */
-.contact {
-  background-color: #EEEEEE;
-  padding-bottom: 4em;
-  padding-top: 4em;
-}
-
-  .container_contact_image {
-    padding-bottom: 1em;
-  }
-
-    .contact_image {
-      display: block;
-      margin: auto;
-      width: 60%
-    }
-
-
-/* ------------------------------ Footer Section ------------------------------ */
-.footer.total {
-  background-color: #2E4052;
-  color: #DDE0DB;
-  font-size: 1.2em;
-}
-
-  .container_list_item {
-    padding-bottom: .5em;
-    padding-top: 1em;
-  }

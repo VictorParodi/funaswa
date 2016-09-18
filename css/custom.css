@@ -47,13 +47,12 @@
 
 /* ==========  Welcome Section ========== */
 .welcome_container {
-  /*border: 1px dotted black;*/
+  padding: 6em 0;
 }
 
 .welcome_title {
   color: #F03A47;
   font-size: 2.5em;
-  padding-top: 1.5em;
   text-align: center;
 }
 
@@ -97,4 +96,51 @@
   .info_item_title_container-right {
     padding-top: 0;
   }
+}
+
+
+/* ==========  Team Section ========== */
+.team_container {
+  background-color: #ECEFF1;
+  padding: 6em 0;
+}
+
+.team_title {
+  color: #F03A47;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.team_intro_text {
+  padding: 0 3em;
+  text-align: center;
+}
+
+.member_image_container {
+  padding: 0 0;
+}
+
+.team_member_item {
+  padding-top: 3em;
+  text-align: center;
+}
+
+.member_image {
+  /*display: block;*/
+  height: 20em;
+  width: 20em;
+}
+
+.member_target {
+  color: #F03A47;
+  padding-top: 1.5em;
+}
+
+.member_name {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.member_position {
+  color: #0E79B2;
 }

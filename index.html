@@ -5,6 +5,8 @@
     <title> FUNASWA </title>
     <!--  -->
     <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <!-- Import semantic UI -->
     <link rel="stylesheet" href="css/semantic.css">
     <!-- Import ED-Grid -->
@@ -15,132 +17,425 @@
 
   <body>
     <!-- ============================== Header Section ============================== -->
-    <header class="ed-container header_container total">
-      <nav class="ed-item base-100 ui text menu desde-tablet">
-        <div class="header item"><img src="img/logo.svg" class="menu_logo" alt="funaswa"/></div>
-        <a href="#" class="item menu_item"> <i class="user icon"></i> Quienes somos </a>
-        <a href="#" class="item menu_item"> <i class="users icon"></i> Qué hacemos </a>
-        <a href="#" class="item menu_item"> <i class="star icon"></i> Blog </a>
-        <a href="#" class="item menu_item"> <i class="star icon"></i> ¿Quieres ayudar? </a>
-        <a href="#" class="item menu_item"> <i class="heart icon"></i> Contácto </a>
-      </nav>
-
-      <div class="ed-item base-100 container_header_bground">
-        <!-- wallpaper header -->
+    <header class="ed-container total">
+      <div class="ed-item base-100 social-icons-row">
+        <div class="ui text menu menu-header">
+          <a class="item menu-item desde-tablet"> Quienes Somos </a>
+          <a class="item menu-item desde-tablet"> Servicios Corporativos</a>
+          <a class="item menu-item desde-tablet"> Programas Sociales</a>
+          <a class="item menu-item desde-tablet"> Contácto </a>
+          <a href="http://mail.funaswa.org/" class="item menu-item desde-tablet" target="_blank"> Miembros </a>
+          <div class="right menu desde-web menu-header-right">
+            <a class="item menu-item"><i class="facebook icon"></i> facebook/funaswa </a>
+            <a class="item menu-item"><i class="twitter icon"></i> @funaswa </a>
+          </div>
+        </div>
       </div>
-    </header> <!-- header container -->
+
+      <div class="ed-item base-40 tablet-40">
+        <img src="img/logo.svg" alt="logo funaswa" class="logo-header">
+      </div>
+
+      <div class="ed-item base-100 web-20 desde-web contact-data">
+        <i class="phone icon"></i>
+        7283440 - 3167791689
+      </div>
+
+      <div class="ed-item base-100 web-20 desde-web contact-data">
+        <i class="mail icon"></i>
+        info@funaswa.org
+      </div>
+
+      <div class="ed-item base-100 web-20 desde-web contact-data">
+        <i class="marker icon"></i>
+        Riohacha, Colombia
+      </div>
+
+      <!--<div class="ed-item base-30 hasta-web mobile-menu-container">
+        <div class="mobile-menu" data-content="Soy el menú móvil">
+          <i class="content icon mobile-menu-icon"></i>
+        </div>
+      </div>-->
+
+      <div class="ed-item base-60 hasta-web mobile-menu-container">
+        <div class="ui dropdown">
+          <i class="content icon mobile-menu-icon"></i>
+          <div class="menu mobile-menu-items">
+            <div class="item"> Quines somos </div>
+
+            <div class="item"> Servicios corporativos </div>
+
+            <div class="item"> Programas sociales </div>
+
+            <div class="item"> Contácto </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
 
+    <!-- ============================== Video Section ============================== -->
+    <section class="ed-container total video-container">
+      <div class="ed-item base-100 video-container">
+        <video src="video/video.mp4" class="video-item" autoplay loop muted poster="video/video.jpg"></video>
+      </div>
+    </section>
 
-    <!-- ============================== Welcome Section ============================== -->
-    <section class="ed-container welcome_container">
-      <div class="ed-item base-100 welcome_title_container">
-        <h1 class="welcome_title"> Bienvenido !</h1>
-        <p class="welcome_intro_text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores deserunt, cupiditate? Repudiandae sed ea eligendi iusto necessitatibus illo. Nesciunt ratione cupiditate, quod perferendis libero! Aut voluptatibus quos omnis asperiores! Praesentium.
+
+    <!-- ============================== welcome Section ============================== -->
+    <section class="ed-container welcome-section desde-tablet">
+      <div class="ed-item base-100 tablet-1-3 welcome-item">
+        <h3 class="ui icon header center aligned">
+          <i class="user icon welcome-item-icon"></i>
+          <div class="content">
+            Hola Mundo
+            <div class="sub header"> Contenido secundario </div>
+          </div>
+        </h3>
+      </div>
+
+      <div class="ed-item base-100 tablet-1-3 welcome-item">
+        <h3 class="ui icon header center aligned">
+          <i class="user icon welcome-item-icon"></i>
+          <div class="content">
+            Hola Mundo
+            <div class="sub header"> Contenido secundario </div>
+          </div>
+        </h3>
+      </div>
+
+      <div class="ed-item base-100 tablet-1-3 welcome-item">
+        <h3 class="ui icon header center aligned">
+          <i class="user icon welcome-item-icon"></i>
+          <div class="content">
+            Hola Mundo
+            <div class="sub header"> Contenido secundario </div>
+          </div>
+        </h3>
+      </div>
+    </section>
+
+
+    <!-- ============================== about Section ============================== -->
+    <section class="ed-container about-container">
+      <div class="ed-item base-100 tablet-50 about-text-container">
+        <h4 class="top-about-title"> JARALII WAYA </h4>
+        <h2 class="main-about-title"> QUIENES SOMOS </h2>
+
+        <p class="about-text">
+          Funaswa es una organización sin ánimo de lucro, creada por un grupo de jóvenes profesionales Wayuu, con un enfoque interdisciplinar y orientado al estudio científico social, desde las necesidades reales de las comunidades.
         </p>
-      </div> <!-- welcome_title_container -->
 
-      <div class="ed-container base-100 tablet-50 welcome_info_item_container">
-        <div class="ed-item base-65 info_item_title_container-right">
-          <h2 class="info_item_title-right"> Lorem ipsum dolor sit amet </h2>
-          <p class="info_item_text-right">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit aspernatur earum dicta, excepturi tenetur soluta debitis obcaecati doloribus animi, tempore, odio id accusantium. Incidunt debitis est error rerum impedit laborum non.
-          </p>
-        </div>
-
-        <div class="ed-item base-35 info_item_image_container-right">
-          <img src="img/image2.jpg" alt="image1" class="info_item_image">
-        </div> 
-      </div> <!-- welcome_info_item_container right -->
-
-
-      <div class="ed-container base-100 tablet-50 welcome_info_item_container">
-        <div class="ed-item base-35 info_item_image_container-left">
-          <img src="img/image3.jpg" alt="image1" class="info_item_image">
-        </div>
-
-        <div class="ed-item base-65 info_item_title_container-left">
-          <h2 class="info_item_title-left"> Lorem ipsum dolor sit amet </h2>
-          <p class="info_item_tex-left">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum dicta, excepturi tenetur soluta debitis obcaecati doloribus animi, tempore, odio id accusantium. Incidunt debitis est error rerum impedit laborum non.
-          </p>
-        </div>
-      </div> <!-- welcome_info_item_container left -->
-
-
-      <div class="ed-container base-100 tablet-50 welcome_info_item_container">
-        <div class="ed-item base-65 info_item_title_container-right">
-          <h2 class="info_item_title-right"> Lorem ipsum dolor sit amet </h2>
-          <p class="info_item_text-right">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit aspernatur earum dicta, excepturi tenetur soluta debitis obcaecati doloribus animi, tempore, odio id accusantium. Incidunt debitis est error rerum impedit laborum non.
-          </p>
-        </div>
-
-        <div class="ed-item base-35 info_item_image_container-right">
-          <img src="img/image3.jpg" alt="image1" class="info_item_image">
-        </div>
-      </div> <!-- welcome_info_item_container-right -->
-
-
-      <div class="ed-container base-100 tablet-50 welcome_info_item_container">
-        <div class="ed-item base-35 info_item_image_container-left">
-          <img src="img/image2.jpg" alt="image1" class="info_item_image">
-        </div>
-
-        <div class="ed-item base-65 info_item_title_container-left">
-          <h2 class="info_item_title-left"> Lorem ipsum dolor sit amet </h2>
-          <p class="info_item_tex-left">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum dicta, excepturi tenetur soluta debitis obcaecati doloribus animi, tempore, odio id accusantium. Incidunt debitis est error rerum impedit laborum non.
-          </p>
-        </div>
-      </div> <!-- welcome_info_item_container left -->
-    </section> <!-- welcome section -->
-
-
-
-    <!-- ============================== Team Section ============================== -->
-    <section class="ed-container team_container total">
-      <div class="ed-item base-100 team_title_container">
-        <h1 class="team_title"> Nuestro Equipo </h1>
-        <p class="team_intro_text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ipsum incidunt, delectus ducimus ratione consectetur, non in nostrum debitis accusamus est animi nihil quaerat odio blanditiis assumenda asperiores. Porro, officia.
+        <p class="about-text">
+          Tenemos como visión, convertirnos en un referente regional en materia de estudios sociales con enfoque interdisciplinar, que garanticen el éxito y la continuidad  de programas y proyectos sostenibles en diferentes campos y sectores sociales, así como el fortalecimiento de la identidad propia de cada grupo poblacional.
         </p>
-      </div> <!-- team_title_container -->
+
+        <p class="about-text">
+          Nuestra misión se basa en la asistencia de proyectos de desarrollo social, económico, cultural y territorial, través de diagnósticos y estudios de caracterización, finalizando con la formulación y ejecución de proyectos auto-sostenibles basados en resultados de estudios técnicos.
+        </p>
+      </div>
+
+      <div class="ed-item base-100 tablet-50 about-image-container">
+        <img src="img/image1.jpg" class="about-image" alt="Imagen mujeres wayuu">
+      </div>
+    </section>
 
 
-      <div class="ed-item base-100 tablet-1-3 team_member_item">
-        <div class="member_image_container">
-          <img src="img/member1.jpg" alt="member" class="ui center circular image member_image">
-        </div>
-        <p class="member_target"> <span class="member_name"> Johana Doe </span> <span class="member_position"> Cargo Miembro </span></p>
-        <p class="member_description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi vero dolor officiis, consequuntur veniam esse nemo numquam, alias nulla, nesciunt neque debitis iusto. Natus hic voluptatem velit accusamus error, provident! </p>
-      </div> <!-- team_member_item -->
+    <!-- ============================== corporate services Section ============================== -->
+    <section class="ed-container corporate-container total">
+      <div class="ed-item base-100 corporate-text-container">
+        <h4 class="top-corporate-title"> LO QUE HACEMOS </h4>
+        <h2 class="main-corporate-title"> SERVICIOS CORPORATIVOS </h2>
+        <p class="body-corporate-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut animi nam numquam repudiandae. Corporis hic quam tempore quisquam, sint, odio a? Eveniet blanditiis quod inventore, corporis animi eum laborum ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae architecto aliquid, laborum saepe. Assumenda totam temporibus hic neque ullam. Magni veniam, pariatur id fugiat amet harum nesciunt, blanditiis ad enim!
+        </p>
+      </div>
+    </section>
 
 
-      <div class="ed-item base-100 tablet-1-3 team_member_item">
-        <div class="member_image_container">
-          <img src="img/member3.jpg" alt="member" class="ui center circular image member_image">
-        </div>
-        <p class="member_target"> <span class="member_name"> Kate Doe </span> <span class="member_position"> Cargo Miembro </span></p>
-        <p class="member_description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi vero dolor officiis, consequuntur veniam esse nemo numquam, alias nulla, nesciunt neque debitis iusto. Natus hic voluptatem velit accusamus error, provident! </p>
-      </div> <!-- team_member_item -->
+    <!-- ============================== services Section ============================== -->
+    <section class="ed-container services-container total">
+      <div class="ed-item base-100 services-text-container">
+        <h4 class="top-services-title"> LO QUE HACEMOS </h4>
+        <h2 class="main-services-title"> PROGRAMAS SOCIALES</h2>
+      </div>
 
 
-      <div class="ed-item base-100 tablet-1-3 team_member_item">
-        <div class="member_image_container">
-          <img src="img/member2.jpg" alt="member" class="ui center circular image member_image">
-        </div>
-        <p class="member_target"> <span class="member_name"> John Doe </span> <span class="member_position"> Cargo Miembro </span></p>
-        <p class="member_description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi vero dolor officiis, consequuntur veniam esse nemo numquam, alias nulla, nesciunt neque debitis iusto. Natus hic voluptatem velit accusamus error, provident! </p>
-      </div> <!-- team_member_item -->
-    </section> <!-- team section -->
+      <div class="ed-item base-100 tablet-1-3 services-card-container">
+        <div class="ui special cards">
+          <div class="card service-card-item service-one">
+            <div class="dimmable blurring image top-card">
+              <div class="ui dimmer">
+                <div class="content">
+                  <div class="center">
+                    <p class="card-inside-text"> Esta es la breve descripción del servico 1. La misma, será acompañada de un botón hacia un enlace de donación </p>
+                    <a href="#" class="ui blue button"> apoyar </a> 
+                  </div> <!-- center -->
+                </div> <!-- content -->
+              </div> <!-- dimmer -->
+            </div> <!-- dimmable blurring image -->
+
+            <div class="content medium-card">
+              <a class="header"> Salud </a>
+            </div> <!-- medium card -->
+          </div> <!-- card -->
+        </div> <!-- special cards -->
+      </div> <!-- services-card-container -->
+
+
+      <div class="ed-item base-100 tablet-1-3 services-card-container">
+        <div class="ui special cards">
+          <div class="card service-card-item service-two">
+            <div class="dimmable blurring image top-card">
+              <div class="ui dimmer">
+                <div class="content">
+                  <div class="center">
+                    <p class="card-inside-text"> Esta es la breve descripción del servico 1. La misma, será acompañada de un botón hacia un enlace de donación </p>
+                    <a href="#" class="ui blue button"> apoyar </a>
+                  </div> <!-- center -->
+                </div> <!-- content -->
+              </div> <!-- dimmer -->
+            </div> <!-- dimmable blurring image -->
+
+            <div class="content medium-card">
+              <a class="header"> Educación </a>
+            </div> <!-- medium card -->
+          </div> <!-- card -->
+        </div> <!-- special cards -->
+      </div> <!-- services-card-container -->
+
+
+      <div class="ed-item base-100 tablet-1-3 services-card-container">
+        <div class="ui special cards">
+          <div class="card service-card-item service-three">
+            <div class="dimmable blurring image top-card">
+              <div class="ui dimmer">
+                <div class="content">
+                  <div class="center">
+                    <p class="card-inside-text"> Esta es la breve descripción del servico 1. La misma, será acompañada de un botón hacia un enlace de donación </p>
+                    <a href="#" class="ui blue button"> apoyar </a>
+                  </div> <!-- center -->
+                </div> <!-- content -->
+              </div> <!-- dimmer -->
+            </div> <!-- dimmable blurring image -->
+
+            <div class="content medium-card">
+              <a class="header"> Cultura </a>
+            </div> <!-- medium card -->
+          </div> <!-- card -->
+        </div> <!-- special cards -->
+      </div> <!-- services-card-container -->
+
+
+      <div class="ed-item base-100 tablet-1-3 services-card-container">
+        <div class="ui special cards">
+          <div class="card service-card-item service-four">
+            <div class="dimmable blurring image top-card">
+              <div class="ui dimmer">
+                <div class="content">
+                  <div class="center">
+                    <p class="card-inside-text"> Esta es la breve descripción del servico 1. La misma, será acompañada de un botón hacia un enlace de donación </p>
+                    <a href="#" class="ui blue button"> apoyar </a>
+                  </div> <!-- center -->
+                </div> <!-- content -->
+              </div> <!-- dimmer -->
+            </div> <!-- dimmable blurring image -->
+
+            <div class="content medium-card">
+              <a class="header"> Medio ambiente </a>
+            </div> <!-- medium card -->
+          </div> <!-- card -->
+        </div> <!-- special cards -->
+      </div> <!-- services-card-container -->
+
+
+      <div class="ed-item base-100 tablet-1-3 services-card-container">
+        <div class="ui special cards">
+          <div class="card service-card-item service-five">
+            <div class="dimmable blurring image top-card">
+              <div class="ui dimmer">
+                <div class="content">
+                  <div class="center">
+                    <p class="card-inside-text"> Esta es la breve descripción del servico 1. La misma, será acompañada de un botón hacia un enlace de donación </p>
+                    <a href="#" class="ui blue button"> apoyar </a>
+                  </div> <!-- center -->
+                </div> <!-- content -->
+              </div> <!-- dimmer -->
+            </div> <!-- dimmable blurring image -->
+
+            <div class="content medium-card">
+              <a class="header"> Desarrollo económico </a>
+            </div> <!-- medium card -->
+          </div> <!-- card -->
+        </div> <!-- special cards -->
+      </div> <!-- services-card-container -->
+
+
+      <div class="ed-item base-100 tablet-1-3 services-card-container">
+        <div class="ui special cards">
+          <div class="card service-card-item service-six">
+            <div class="dimmable blurring image top-card">
+              <div class="ui dimmer">
+                <div class="content">
+                  <div class="center">
+                    <p class="card-inside-text"> Esta es la breve descripción del servico 1. La misma, será acompañada de un botón hacia un enlace de donación </p>
+                    <a href="#" class="ui blue button"> apoyar </a>
+                  </div> <!-- center -->
+                </div> <!-- content -->
+              </div> <!-- dimmer -->
+            </div> <!-- dimmable blurring image -->
+
+            <div class="content medium-card">
+              <a class="header"> Desarrollo social </a>
+            </div> <!-- medium card -->
+          </div> <!-- card -->
+        </div> <!-- special cards -->
+      </div> <!-- services-card-container -->
+    </section>
+
+
+    <!-- ============================== achievement Section ============================== -->
+    <section class="ed-container achievement-container total">
+      <div class="ed-item base-50 tablet-25 achievement-item-container">
+        <h3 class="ui center aligned icon header achievement-item">
+          <i class="heart icon"></i>
+          <div class="content">
+            - 2000 -
+            <div class="sub header"> Heart achievement </div>
+          </div>
+        </h3>
+      </div>
+
+      <div class="ed-item base-50 tablet-25 achievement-item-container">
+        <h3 class="ui center aligned icon header achievement-item">
+          <i class="users icon"></i>
+          <div class="content">
+            - 1500 -
+            <div class="sub header"> People achievement </div>
+          </div>
+        </h3>
+      </div>
+
+      <div class="ed-item base-50 tablet-25 achievement-item-container">
+        <h3 class="ui center aligned icon header achievement-item">
+          <i class="doctor icon"></i>
+          <div class="content">
+            - 2500 -
+            <div class="sub header"> People achievement </div>
+          </div>
+        </h3>
+      </div>
+
+      <div class="ed-item base-50 tablet-25 achievement-item-container">
+        <h3 class="ui center aligned icon header achievement-item">
+          <i class="child icon"></i>
+          <div class="content">
+            - 2000 -
+            <div class="sub header"> People achievement </div>
+          </div>
+        </h3>
+      </div>
+    </section>
+
+
+    <!-- ============================== contact Section ============================== -->
+    <section class="ed-container contact-container total">
+      <div class="ed-item base-100 tablet-50 contact-data-container">
+        <img src="img/logo2.svg" alt="" class="contact-logo">
+        
+        <div class="ui list">
+          <a class="item contact-item">
+            <i class="big phone icon contact-item-icon"></i>
+            <div class="content">
+              <div class="header contact-item-header"> TELÉFONO </div>
+              <div class="description contact-item-info"> 7283440 - 3167791689 </div>
+            </div> <!-- content -->
+          </a> <!-- item -->
+
+          <a class="item contact-item">
+            <i class="big mail icon contact-item-icon"></i>
+            <div class="content">
+              <div class="header contact-item-header"> EMAIL </div>
+              <div class="description contact-item-info"> info@funaswa.org </div>
+            </div> <!-- content -->
+          </a> <!-- item -->
+
+          <a class="item contact-item">
+            <i class="big marker icon contact-item-icon"></i>
+            <div class="content">
+              <div class="header contact-item-header"> DIRECCIÓN </div>
+              <div class="description contact-item-info"> Calle 24 # 6-56, Riohacha - Colombia </div>
+            </div> <!-- content -->
+          </a> <!-- item -->
+        </div> <!-- ui list -->
+      </div> <!-- contact-data-container -->
+
+      <div class="ed-item base-100 tablet-50 contact-form-container">
+        <h4> CONTÁCTANOS </h4>
+        <form action="" class="ui form contact-form">
+          <div class="field">
+            <label for="name"> Nombre y apellido </label>
+            <input type="text" name="name" placeholder="Ingresa tu nombre y tu apellido" required>
+          </div>
+
+          <div class="field">
+            <label for="email"> Correo electrónico </label>
+            <input type="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+          </div>
+
+          <div class="field">
+            <label for="message"> Mensaje </label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          </div>
+
+          <input type="submit" class="ui button blue" value="Enviar">
+        </form>
+      </div>
+    </section>
+
+
+    <!-- ============================== footer Section ============================== -->
+    <footer class="ed-container footer-container total">
+      <div class="ed-item base-100 tablet-25 copyright-container">
+        <p>
+          <a class="footer-link">
+            <i class="copyright icon"></i>funaswa: derechos reservados
+          </a>
+        </p>
+      </div>
+
+      <div class="ed-item base-100 tablet-25 facebook-container">
+        <p>
+          <a class="footer-link">
+            <i class="facebook icon"></i>facebook/funaswa
+          </a>
+        </p>
+      </div>
+
+      <div class="ed-item base-100 tablet-25 twitter-container">
+        <p>
+          <a class="footer-link">
+            <i class="twitter icon"></i>@funaswa
+          </a>
+        </p>
+      </div>
+
+      <div class="ed-item base-100 tablet-25 creator-container">
+        <p>
+          <a href="http://victorparodi.neocities.org/" class="footer-link" target="_blank">
+            <i class="paint brush icon"></i>Creado por: Victor Parodi
+          </a>
+        </p>
+      </div>
+    </footer>
 
 
     <!-- Import Jquery -->
     <script type="text/javascript" src="js/jquery-2.2.3.js"></script>
     <!-- Import semantic UI -->
     <script type="text/javascript" src="js/semantic.js"></script>
+    <!-- Import vide js -->
+    <script type="text/javascript" src="js/jquery.vide.min.js"></script>
     <!-- Import custom js -->
     <script type="text/javascript" src="js/custom.js"></script>
   </body>

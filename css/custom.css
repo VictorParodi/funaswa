@@ -10,137 +10,376 @@
 
 /* ============================== Home Styles ============================== */
 /* ==========  Header Section ========== */
-.header_container {
-  background-color: #263238;
-  background-color: #AD1457;
-  background-color: white;
+.social-icons-row {
+  background-color: #F03A47;
   color: white;
 }
 
-.ed-item.text.menu {
-  /*margin-bottom: 0;
-  margin-top: 0;*/
+.menu-header {
+  /*border: 1px solid yellow !important;*/
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
 }
 
-.text.menu .item {
-  /*border: 1px dashed orange;*/
-  color: #0E79B2 !important;
+.menu-header-right {
+  margin-right: 1em !important;
 }
 
-.menu_logo {
-  /*width: 18em !important;*/
-  width: 8em !important;
+.mobile-menu-icon {
+  color: white;
+  font-size: 2.5em !important;
+  margin-left: 3.5em !important;
+  margin-top: .8em !important;
 }
 
-.menu_item {
-  font-size: 1.1em;
-  padding-left: 6em !important;
+.mobile-menu-items {
+  width: 100%;
 }
 
-.container_header_bground {
-  background-image: url('../img/image1.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 60em;
+.menu-item {
+  /*border: 1px solid black;*/
+  color: white !important;
 }
 
-/* ==========  Welcome Section ========== */
-.welcome_container {
-  padding: 6em 0;
+.logo-header {
+  margin-top: .5em;
+  width: 7em;
 }
 
-.welcome_title {
+.contact-data {
+  /*border: 1px solid yellow !important;*/
   color: #F03A47;
-  font-size: 2.5em;
-  text-align: center;
+  color: white;
+  padding-top: 2em;
 }
 
-.welcome_intro_text {
-  text-align: center;
-}
-
-.welcome_info_item_container {
-  padding-top: 3em;
-}
-
-.info_item_title_container-right {
-  padding-right: .5em;
-  padding-top: 3em;
-  text-align: right;
-}
-
-.info_item_title_container-left {
-  padding-left: .5em;
-  padding-top: 3em;
-}
-
-.info_item_title-right,
-.info_item_title-left {
-  color: #0E79B2;
-}
-
-.info_item_image_container-right,
-.info_item_image_container-left {
-  padding: 1em;
-}
-
-.info_item_image {
-  border-radius: 50%;
-  display: block;
-  height: 13em;
-}
-
-@media screen and (min-width: 320px) and (max-width: 760px){
-  .info_item_title_container-left,
-  .info_item_title_container-right {
-    padding-top: 0;
+@media screen and (min-width: 568px) {
+  .mobile-menu-icon {
+    margin-left: 7.5em !important;
   }
 }
 
 
-/* ==========  Team Section ========== */
-.team_container {
-  background-color: #ECEFF1;
-  padding: 6em 0;
+/* ==========  Video Section ========== */
+.video-container {
+  padding: 0;
 }
 
-.team_title {
+.video-item {
+  left: 0%;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  top: 0%;
+  transform: translateX(0) translateY(-12%);
+  -webkit-transform: translateX(0) translateY(-12%);
+  z-index: -1; 
+  -webkit-z-index: -1;  
+}
+
+/*.video-item {
+    background-size: cover;
+    bottom: 0;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    right: 0;
+    width: auto;
+    z-index: -100;
+}*/
+
+@media screen and (min-width: 320px) and (max-width: 760px){
+    .video-item {
+      height: 30em;
+      transform: translateX(0) translateY(-48%);
+      -webkit-transform: translateX(0) translateY(-48%);
+    }
+}
+
+
+/* ==========  Welcome Section ========== */
+.welcome-section {
+  background-color: white;
+  box-shadow: 0px 1px 8px lightslategrey;
+  /*border: 1px dashed darkred;*/
+  margin-top: -10em;
+  padding-top: 1em;
+}
+
+.welcome-item-icon {
   color: #F03A47;
-  font-size: 2.5em;
+}
+
+@media screen and (min-width: 320px) and (max-width: 760px){
+    .welcome-section {
+      box-shadow: none;
+      margin-top: -24em;
+    }
+}
+
+
+/* ==========  about Section ========== */
+.about-container {
+  padding-bottom: 3em;
+  padding-top: 5em;
+}
+
+.about-text-container {
+  padding-bottom: 1em;
+}
+
+.about-text {
+  text-align: justify;
+}
+
+.top-about-title {
+  color: #F03A47;
+  margin-bottom: -1.5em;
+}
+
+.about-image {
+  border-radius: 3px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 760px){
+  .about-container {
+    margin-top: -20em;
+    padding-top: 0;
+  }
+
+  .about-text-container {
+    text-align: center;
+  }
+}
+
+
+/* ==========  corporate services Section ========== */
+.corporate-container {
+  background-color: #F03A47;
+  padding-bottom: 4em;
+  padding-top: 4em;
+}
+
+.top-corporate-title,
+.main-corporate-title,
+.body-corporate-text {
+  color: white;
   text-align: center;
 }
 
-.team_intro_text {
-  padding: 0 3em;
-  text-align: center;
+.top-corporate-title {
+  margin-bottom: -1.5em;
 }
 
-.member_image_container {
-  padding: 0 0;
+.main-corporate-title {
+  margin-bottom: 1em;
 }
 
-.team_member_item {
+.body-corporate-text {
+  font-size: 1.3em;
+  padding-left: 6em;
+  padding-right: 6em;
+  text-align: justify;
+}
+
+@media screen and (min-width: 320px) and (max-width: 760px){
+ .body-corporate-text {
+    font-size: 1em;
+    padding-left: 0;
+    padding-right: 0;
+  } 
+}
+
+
+/* ==========  services Section ========== */
+.services-container {
+  background-color: #F5F5F5;
+  /*margin-top: 4em;*/ /* si la sección de servicios corporativos está encime de la sección de servicios, esta línea debe estar comentada */ 
+  padding-bottom: 3em;
   padding-top: 3em;
+}
+
+.services-text-container {
+  margin-bottom: 2em;
+}
+
+.top-services-title {
+  color: #F03A47;
+  margin-bottom: -1.5em;
   text-align: center;
 }
 
-.member_image {
-  /*display: block;*/
-  height: 20em;
-  width: 20em;
+.main-services-title {
+  text-align: center;
 }
 
-.member_target {
-  color: #F03A47;
-  padding-top: 1.5em;
+.service-card-item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100% !important;
+  margin-bottom: 2em !important;
+  width: 100% !important;
 }
 
-.member_name {
-  font-size: 1.7em;
-  font-weight: bold;
+.service-one {
+  background-image: url('../img/image1.jpg') !important;
 }
 
-.member_position {
-  color: #0E79B2;
+.service-two {
+  background-image: url('../img/educacion.jpg') !important;
+}
+
+.service-three {
+  background-image: url('../img/image3.jpg') !important;
+}
+
+.service-four {
+  background-image: url('../img/medio-ambiente.jpg') !important;
+}
+
+.service-five {
+  background-image: url('../img/d-economico.jpg') !important;
+}
+
+.service-six {
+  background-image: url('../img/d-social.jpg') !important;
+}
+
+.top-card {
+  height: 18em;
+}
+
+.card-inside-text {
+  padding: 0 .5em;
+}
+
+.medium-card {
+  background-color: rgba(0, 0, 0, .6) !important;
+}
+
+.medium-card a, .medium-card span {
+  color: white !important; 
+} 
+
+
+/* ==========  achievement Section ========== */
+.achievement-container {
+  background-color: #F03A47;
+  padding-top: 1em;
+}
+
+.achievement-item, .achievement-item div {
+  color: white !important;
+}
+
+
+/* ==========  contact Section ========== */
+.contact-container {
+  background-attachment: fixed;
+  background-image: url('../img/image1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-logo {
+  width: 15em; 
+}
+
+.contact-data-container,
+.contact-form-container { 
+  /*border: 1px dashed yellow;*/
+  background-color: rgba(25, 25, 35, .7);
+  color: white; 
+  padding-bottom: 2em;
+  padding-top: 3em;
+}
+
+.contact-data-container { 
+  padding-left: 5em;
+}
+
+.contact-item {
+  margin-bottom: 1em;
+}
+
+.contact-item-icon {
+  color: #F03A47 !important;
+}
+
+.contact-item-header {
+  color: white !important;
+}
+
+.contact-item-info {
+  color: white !important;
+}
+
+.contact-form-container { 
+  padding-right: 5em;
+}
+
+.contact-form label {
+  color: white !important; 
+}
+
+@media screen and (min-width: 320px) and (max-width: 760px){
+  .contact-logo {
+    display: block;
+    margin: auto; 
+  }
+
+  .contact-data-container { 
+    padding-left: 0;
+  }
+
+  .contact-item {
+    margin-left: 3em;
+  }
+
+  .contact-form-container { 
+    padding-right: 1em;
+  }
+}
+
+
+/* ==========  footer Section ========== */
+.footer-container {
+  background-color: #F03A47;
+}
+
+.copyright-container,
+.creator-container,
+.facebook-container,
+.twitter-container {
+  color: white;
+  padding: .5em 0;
+  text-align: center;
+}
+
+.footer-link {
+  color: white;
+}
+
+.footer-link:hover {
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 760px){
+  .copyright-container,
+  .creator-container,
+  .facebook-container,
+  .twitter-container {
+    padding-left: 1em;
+    text-align: justify;
+  }
+}
+
+/* ==========  Team Section ========== */
+@media screen and (min-width: 320px) and (max-width: 760px){
+  
 }

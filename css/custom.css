@@ -10,7 +10,17 @@
 
 /* ============================== Home Styles ============================== */
 /* ==========  Header Section ========== */
-.social-icons-row {
+.home-header-container {
+  background-attachment: fixed;
+  background-image: url(../img/image1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 47em;
+  padding-bottom: 38em;
+}
+
+.menu-and-social-container {
   background-color: #F03A47;
   color: white;
 }
@@ -59,43 +69,9 @@
   }
 }
 
-
-/* ==========  Video Section ========== */
-.video-container {
-  padding: 0;
-}
-
-.video-item {
-  left: 0%;
-  max-width: 100%;
-  max-height: 100%;
-  min-width: 100%;
-  min-height: 100%;
-  position: relative;
-  top: 0%;
-  transform: translateX(0) translateY(-12%);
-  -webkit-transform: translateX(0) translateY(-12%);
-  z-index: -1; 
-  -webkit-z-index: -1;  
-}
-
-/*.video-item {
-    background-size: cover;
-    bottom: 0;
-    height: auto;
-    min-height: 100%;
-    min-width: 100%;
-    position: fixed;
-    right: 0;
-    width: auto;
-    z-index: -100;
-}*/
-
 @media screen and (min-width: 320px) and (max-width: 760px){
-    .video-item {
+    .home-header-container {
       height: 30em;
-      transform: translateX(0) translateY(-48%);
-      -webkit-transform: translateX(0) translateY(-48%);
     }
 }
 
@@ -105,7 +81,7 @@
   background-color: white;
   box-shadow: 0px 1px 8px lightslategrey;
   /*border: 1px dashed darkred;*/
-  margin-top: -10em;
+  margin-top: -3em;
   padding-top: 1em;
 }
 
@@ -116,7 +92,14 @@
 @media screen and (min-width: 320px) and (max-width: 760px){
     .welcome-section {
       box-shadow: none;
-      margin-top: -24em;
+      margin-top: -70em;
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1024px){
+    .welcome-section {
+      max-width: 95%;
+      min-width: 95%;
     }
 }
 
@@ -137,17 +120,25 @@
 
 .top-about-title {
   color: #F03A47;
+  font-family: 'lato' , sans-serif;
   margin-bottom: -1.5em;
+}
+
+.main-about-title {
+  font-family: 'lato' , sans-serif;
 }
 
 .about-image {
   border-radius: 3px;
+  float: right;
+  margin-left: 1em;
+  margin-top: -4.6em;
+  width: 45%;
 }
 
 @media screen and (min-width: 320px) and (max-width: 760px){
   .about-container {
-    margin-top: -20em;
-    padding-top: 0;
+    margin-top: 0em;
   }
 
   .about-text-container {
@@ -225,27 +216,15 @@
 }
 
 .service-one {
-  background-image: url('../img/image1.jpg') !important;
+  background-image: url('../img/cultura2.jpg') !important;
 }
 
 .service-two {
-  background-image: url('../img/educacion.jpg') !important;
-}
-
-.service-three {
-  background-image: url('../img/image3.jpg') !important;
-}
-
-.service-four {
   background-image: url('../img/medio-ambiente.jpg') !important;
 }
 
-.service-five {
+.service-three {
   background-image: url('../img/d-economico.jpg') !important;
-}
-
-.service-six {
-  background-image: url('../img/d-social.jpg') !important;
 }
 
 .top-card {
@@ -379,7 +358,115 @@
   }
 }
 
-/* ==========  Team Section ========== */
+
+/* ============================== Programas Styles ============================== */
+/* ==========  header Section ========== */
+.header-image-container {
+  height: 13em;
+}
+
+.header-image-layer {
+  /*background-color: rgba(25, 25, 35, 0.5);*/
+  background-color: rgba(240, 58, 71, 1);
+}
+
+.header-title {
+  color: white;
+  font-family: 'lato' , sans-serif;
+  font-size: 2.5em;
+  padding-top: 1em;
+  text-align: center; 
+}
+
+.header-logo-container {
+  background-color: white;
+  border-radius: 50%;
+  height: 125px;
+  padding-top: 2em;
+  position: relative;
+  top: 1em;
+  text-align: center;
+  width: 125px;
+}
+
+.header-logo {
+  width: 75%;
+}
+
+/* ==========  info Section ========== */
+.program-image-container {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35em;
+}
+
+.culture {
+  background-image: url('../img/cultura2.jpg');
+}
+
+.environment {
+  background-image: url('../img/medio-ambiente.jpg');
+}
+
+.e-development {
+  background-image: url('../img/d-economico.jpg');
+}
+
+.info-text-container {
+  padding-bottom: 4em;
+  padding-top: 4em;
+}
+
+.info-text {
+  font-size: 1.3em;
+  text-align: justify;
+  padding: 0 4em;
+}
+
 @media screen and (min-width: 320px) and (max-width: 760px){
-  
+  .program-image-container {
+    height: 30em;
+  }
+
+  .info-text-container {
+    padding-bottom: 2em;
+    padding-top: 2em;
+  }
+
+  .info-text {
+    padding: 0 1em;
+  }
+}
+
+/* ==========  contact Section ========== */
+.contact-container2 {
+  background-attachment: fixed;
+  background-image: url('../img/image1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.contact-sub-container {
+  background-color: rgba(25, 25, 35, .7);
+  padding-bottom: 2em;
+  padding-top: 2em;
+  width: 100%;
+}
+
+.contact-logo2 {
+  display: block;
+  display: none;
+  margin: auto; 
+  width: 15em;
+}
+
+.contact-icon-item, .contact-icon-item div {
+  color: white !important;
+}
+
+.contact-icon-item i {
+  color: rgb(240, 58, 71);
 }

@@ -37,9 +37,9 @@
 
 .mobile-menu-icon {
   color: white;
-  font-size: 2.5em !important;
+  font-size: 2.7em !important;
   margin-left: 3.5em !important;
-  margin-top: .8em !important;
+  margin-top: .7em !important;
 }
 
 .mobile-menu-items {
@@ -150,8 +150,8 @@
 /* ==========  corporate services Section ========== */
 .corporate-container {
   background-color: #F03A47;
-  padding-bottom: 4em;
-  padding-top: 4em;
+  padding-bottom: 5em;
+  padding-top: 5em;
 }
 
 .top-corporate-title,
@@ -187,10 +187,9 @@
 
 /* ==========  services Section ========== */
 .services-container {
-  background-color: #F5F5F5;
-  /*margin-top: 4em;*/ /* si la sección de servicios corporativos está encime de la sección de servicios, esta línea debe estar comentada */ 
-  padding-bottom: 3em;
-  padding-top: 3em;
+  background-color: #F5F5F5; 
+  padding-bottom: 5em;
+  padding-top: 5em;
 }
 
 .services-text-container {

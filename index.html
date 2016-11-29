@@ -17,7 +17,7 @@
     <link rel="icon" href="img/favicon.ico">
   </head>
 
-  <body>
+  <body data-ng-app="funaswaApplication">
     <!-- ============================== Header Section ============================== -->
     <header class="ed-container total home-header-container">
       <div class="ed-item base-100 menu-and-social-container">
@@ -159,76 +159,29 @@
 
 
     <!-- ============================== services Section ============================== -->
-    <section class="ed-container services-container total animatedParent" id="services-container">
+    <section class="ed-container services-container total animatedParent" id="services-container" data-ng-controller="cardController">
       <div class="ed-item base-100 services-text-container">
         <h4 class="top-services-title"> LO QUE HACEMOS </h4>
         <h2 class="main-services-title"> PROGRAMAS SOCIALES</h2>
       </div>
 
-
-      <div class="ed-item base-100 tablet-1-3 services-card-container">
-        <div class="ui special cards animated bounceInLeft"> <!-- animate item -->
-          <div class="card service-card-item service-one">
+      <div class="ed-item base-100 tablet-1-3 services-card-container" data-ng-repeat="card in cards">
+        <div class="ui special cards animated {{card.bounceDirection}}"> <!-- animate item -->
+          <div class="card service-card-item {{card.service}}">
             <div class="dimmable blurring image top-card">
               <div class="ui dimmer">
                 <div class="content">
                   <div class="center">
-                    <p class="card-inside-text"> Buscamos conocer  historias ancestrales,  realidades  y aspectos coyunturales de las poblaciones </p>
-                    <a href="programas/cultura.html" class="ui blue button"> apoyar </a> 
+                    <p class="card-inside-text"> {{card.text}} </p>
+                    <a href="programas/{{card.link}}" class="ui blue button"> apoyar </a> 
                   </div> <!-- center -->
                 </div> <!-- content -->
               </div> <!-- dimmer -->
             </div> <!-- dimmable blurring image -->
 
             <div class="content medium-card">
-              <a class="header"> Cultura y Educación </a>
-              <span class="hasta-web"> (toque la imagen) </span>
-            </div> <!-- medium card -->
-          </div> <!-- card -->
-        </div> <!-- special cards -->
-      </div> <!-- services-card-container -->
-
-
-      <div class="ed-item base-100 tablet-1-3 services-card-container">
-        <div class="ui special cards animated bounceInUp">
-          <div class="card service-card-item service-two">
-            <div class="dimmable blurring image top-card">
-              <div class="ui dimmer">
-                <div class="content">
-                  <div class="center">
-                    <p class="card-inside-text"> Promovemos la participación dinámica de las comunidades, para garantizar el éxito de las actividades en materia ambiental</p>
-                    <a href="programas/medio_ambiente.html" class="ui blue button"> apoyar </a>
-                  </div> <!-- center -->
-                </div> <!-- content -->
-              </div> <!-- dimmer -->
-            </div> <!-- dimmable blurring image -->
-
-            <div class="content medium-card">
-              <a class="header"> Medio Ambiente </a>
-              <span class="hasta-web"> (toque la imagen) </span>
-            </div> <!-- medium card -->
-          </div> <!-- card -->
-        </div> <!-- special cards -->
-      </div> <!-- services-card-container -->
-
-
-      <div class="ed-item base-100 tablet-1-3 services-card-container">
-        <div class="ui special cards animated bounceInRight">
-          <div class="card service-card-item service-three">
-            <div class="dimmable blurring image top-card">
-              <div class="ui dimmer">
-                <div class="content">
-                  <div class="center">
-                    <p class="card-inside-text"> Formación, acompañamiento y seguimiento de programas y proyectos autosostenibles </p>
-                    <a href="programas/d-economico.html" class="ui blue button"> apoyar </a>
-                  </div> <!-- center -->
-                </div> <!-- content -->
-              </div> <!-- dimmer -->
-            </div> <!-- dimmable blurring image -->
-
-            <div class="content medium-card">
-              <a class="header"> Desarrollo Social </a>
-              <span class="hasta-web"> (toque la imagen) </span>
+              <a class="header"> {{card.title}} </a>
+              <span class="hasta-web"> toque la imagen </span>
             </div> <!-- medium card -->
           </div> <!-- card -->
         </div> <!-- special cards -->
@@ -237,43 +190,13 @@
 
 
     <!-- ============================== achievement Section ============================== -->
-    <section class="ed-container achievement-container total">
-      <div class="ed-item base-50 tablet-25 achievement-item-container">
+    <section class="ed-container achievement-container total" data-ng-controller="iconsController">
+      <div class="ed-item base-50 tablet-25 achievement-item-container" data-ng-repeat="icon in AchiveIcons">
         <h3 class="ui center aligned icon header achievement-item">
-          <i class="child icon"></i>
+          <i class="{{icon.icon}} icon"></i>
           <div class="content">
-            - 150 niños -
-            <div class="sub header"> Sentamos las bases para el futuro </div>
-          </div>
-        </h3>
-      </div>
-
-      <div class="ed-item base-50 tablet-25 achievement-item-container">
-        <h3 class="ui center aligned icon header achievement-item">
-          <i class="female icon"></i>
-          <div class="content">
-            - 120 mujeres -
-            <div class="sub header"> Promovemos la igualdad y la inclusión </div>
-          </div>
-        </h3>
-      </div>
-
-      <div class="ed-item base-50 tablet-25 achievement-item-container">
-        <h3 class="ui center aligned icon header achievement-item">
-          <i class="handicap icon"></i>
-          <div class="content">
-            - 30 adultos mayores -
-            <div class="sub header"> Trabajamos por el respeto y la dignidad </div>
-          </div>
-        </h3>
-      </div>
-
-      <div class="ed-item base-50 tablet-25 achievement-item-container">
-        <h3 class="ui center aligned icon header achievement-item">
-          <i class="users icon"></i>
-          <div class="content">
-            - 400 personas en general -
-            <div class="sub header"> Impactamos y empoderamos comunidades </div>
+            {{icon.content}}
+            <div class="sub header"> {{icon.subHeader}} </div>
           </div>
         </h3>
       </div>
@@ -372,6 +295,12 @@
     </footer>
 
     
+    <!-- Import Angular -->
+    <script type="text/javascript" src="js/angular.js"></script>
+    <!-- Import Angular Route -->
+    <script type="text/javascript" src="js/angular-route.min.js"></script>
+    <!-- Import controllers -->
+    <!--<script type="text/javascript" src="controllers/cardController.js"></script> --> <!-- se presume activo cuando genere las rutas -->
     <!-- Import Jquery -->
     <script type="text/javascript" src="js/jquery-2.2.3.js"></script>
     <!-- Import animate -->
